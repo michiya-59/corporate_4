@@ -10,7 +10,9 @@
   padding: 32px 40px;
   height: 80px;
   background: white;
-  position: fixed;
+  position: sticky;
+  top: 0px;
+  left: 0px;
   width: 94.5%;
   .header_left{
     width: 180px;
@@ -95,6 +97,7 @@
     }
   }
 }
+
 .content{
   margin: 0 40px;
   padding: 42px 40px;
@@ -132,5 +135,24 @@
     display: block;
     text-align: center;
     font-size: 0.875rem;
+  }
+}
+
+#footer{
+  display: flex;
+  margin: 0 40px;
+  padding: 54px 40px 20px 40px;
+  .footer_list{
+    margin-right: auto;
+    ul{
+      display: flex;
+      li{
+        font-size: 0.75rem;
+        margin-right: 30px;
+      }
+    }
+  }
+  .copyright{
+    font-size: 0.625rem;
   }
 }

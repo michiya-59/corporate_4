@@ -6,7 +6,9 @@
   padding: 32px 40px;
   height: 80px;
   background: white;
-  position: fixed;
+  position: sticky;
+  top: 0px;
+  left: 0px;
   width: 94.5%;
 }
 #header .header_left {
@@ -138,4 +140,27 @@
   display: block;
   text-align: center;
   font-size: 0.875rem;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 40px;
+  padding: 54px 40px 20px 40px;
+}
+#footer .footer_list {
+  margin-right: auto;
+}
+#footer .footer_list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#footer .footer_list ul li {
+  font-size: 0.75rem;
+  margin-right: 30px;
+}
+#footer .copyright {
+  font-size: 0.625rem;
 }/*# sourceMappingURL=style.css.map */
