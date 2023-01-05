@@ -14,10 +14,19 @@
   top: 0px;
   left: 0px;
   width: 94.5%;
+  @include media{
+    margin: 0;
+    padding: 28px 25px;
+    width: 100%;
+    justify-content: space-between;
+  }
   .header_left{
     width: 180px;
     height: 100%;
     margin-right: auto;
+    @include media{
+      margin-right: 0;
+    }
     img{
       width: 100%;
     }
@@ -101,6 +110,10 @@
 .content{
   margin: 0 40px;
   padding: 42px 40px;
+  @include media{
+    margin: 0;
+    padding: 42px 25px;
+  }
   .product_title{
     text-align: left;
     h1{
@@ -117,6 +130,11 @@
       height: 294px;
       width: 23%;
       margin-bottom: 80px;
+      @include media{
+        width: 47%;
+        height: auto;
+        margin-bottom: 30px;
+      }
       a img{
         width: 100%;
         height: 100%;
@@ -135,6 +153,9 @@
     display: block;
     text-align: center;
     font-size: 0.875rem;
+    @include media{
+      font-size: 0.8rem;
+    }
   }
 }
 
@@ -142,8 +163,15 @@
   display: flex;
   margin: 0 40px;
   padding: 54px 40px 20px 40px;
+  @include media{
+    margin: 0;
+    flex-direction: column;
+  }
   .footer_list{
     margin-right: auto;
+    @include media{
+      margin-bottom: 10px;
+    }
     ul{
       display: flex;
       li{
@@ -160,6 +188,10 @@
 #about, #company{
   margin: 0 40px;
   padding: 42px 40px;
+  @include media{
+    margin: 0;
+    padding: 42px 25px;
+  }
   .cautionary_note{
     border-radius: 4px;
     width: 48%;
@@ -169,10 +201,18 @@
     font-size: 0.78rem;
     text-align: center;
     border: 1px solid #e0e0e0;
+    @include media{
+      padding: 12px 0;
+      width: 100%;
+    }
     .note1{
       line-height: 26px;
       width: 71%;
       margin: 0 auto;
+      @include media{
+        width: 86%;
+        line-height: 16px;
+      }
     }
     .shipping_fee{
       margin: 5px 0 10px 0;
@@ -206,6 +246,9 @@
         margin-top: 11px;
         border-bottom: 1px solid #cbc8c8;
         border-radius: 0px 0px 4px 4px;
+        @include media{
+          width: 100%;
+        }
       }
     }
     .contact_submit{
@@ -226,6 +269,9 @@
   .shop_info{
     display: flex;
     margin-top: 60px;
+    @include media{
+      margin-top: 20px;
+    }
     .material-symbols-outlined{
       color: #3cb35a;
       font-weight: lighter;
@@ -251,12 +297,19 @@
 #company{
   margin: 0 40px;
   padding: 32px 40px;
+  @include media{
+    margin: 0;
+    padding: 32px 19px;
+  }
   .company_title{
     margin: 10px 0 30px 0;
     font-size: 0.875rem;
   }
   .company_content{
     padding: 5px 10px;
+    @include media{
+      padding: 0;
+    }
     ul{
       max-width: 600px;
       li{
@@ -265,7 +318,11 @@
         padding: 15px 8px;
         font-size: 0.875rem;
         .company_info_title{
-          width: 30%;
+          width: 25%;
+        }
+        .company_info_detail{
+          font-size: 0.685px;
+          line-height: 17px;
         }
       }
     }
@@ -274,6 +331,10 @@
     margin-top: 30px;
     width: 600px;
     height: 300px;
+    @include media{
+      width: 335px;
+      height: 300px;
+    }
     iframe{
       width: 100%;
       height: 100%;
@@ -284,20 +345,35 @@
 #item_page{
   margin: 0 40px;
   padding: 32px 40px;
+  @include media{
+    margin: 0;
+    padding: 32px 25px;
+  }
   .item_title{
     font-size: 0.875rem;
     margin-bottom: 30px;
   }
   .item_content{
     display: flex;
+    @include media{
+      flex-direction: column;
+    }
     img{
       margin-right: 64px;
       width: 400px;
       height: 400px;
+      @include media{
+        width: 100%;
+        height: 295px;
+        margin: 0 0 30px 0;
+      }
     }
     .item_explanation_content{
       width: 336px;
       font-size: 0.875rem;
+      @include media{
+        width: 100%;
+      }
       .item_expelanation, .item_price{
         margin-bottom: 30px;
         line-height: 20px;
