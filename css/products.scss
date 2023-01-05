@@ -1,0 +1,11 @@
+.pagination{
+  display: flex;
+  justify-content: center;
+  .link1{
+    margin-right: 40px;
+    pointer-events: none;
+  }
+  .link2{
+    opacity: 0.5;
+  }
+}
